@@ -18,5 +18,10 @@ ax.fill(frequency, amplitude, 'r',  alpha=0.3)
 
 ax.plot(frequency, amplitude, c='b', alpha=0.8)
 plt.title('Bandwidth of a Signal')
+plt.xlabel('Frequency')
+plt.ylabel('Amplitude')
+plt.grid(True, which='both')
+plt.axhline(y=0, color='k')
+plt.gcf().canvas.set_window_title('The Bandwidth of a Signal')
 
 plt.show()
