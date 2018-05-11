@@ -23,5 +23,5 @@ plt.ylabel('Amplitude')
 plt.grid(True, which='both')
 plt.axhline(y=0, color='k')
 plt.gcf().canvas.set_window_title('The Bandwidth of a Signal')
-
+fig.text(.5, 0.0, "The Bandwidth of this signal is {hz}HZ".format(hz=(maximiumFrequency-minimiumFrequency)), ha='center')
 plt.show()
